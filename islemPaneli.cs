@@ -23,7 +23,6 @@ namespace Kütüphanem
             ekleKullanicibtn.Visible = false;
             silKullanicibtn.Visible = false;
             guncelleKullanicibtn.Visible = false;
-            dataGridView1.Visible = false;
         }
 
         private void Kullanicibtn_Click(object sender, EventArgs e)
@@ -40,13 +39,18 @@ namespace Kütüphanem
                 silKullanicibtn.Visible = false;
                 guncelleKullanicibtn.Visible = false;
             }
-            dataGridView1.Visible = true;
 
-            var kullanicilar = db.Kullanicilar.ToList();
-            dataGridView1.DataSource = kullanicilar.ToList();
+            KullaniciListeForm klisteForm = new KullaniciListeForm();
+            klisteForm.MdiParent = this;
+            klisteForm.Show();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ekleKullanicibtn_Click(object sender, EventArgs e)
         {
 
         }
