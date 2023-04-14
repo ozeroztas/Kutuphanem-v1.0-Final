@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kütüphanem.Kullanici;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -52,7 +53,9 @@ namespace Kütüphanem
 
         private void ekleKullanicibtn_Click(object sender, EventArgs e)
         {
-
+            KullaniciEkleForm ekleForm = new KullaniciEkleForm();
+            ekleForm.MdiParent = this;
+            ekleForm.Show();
         }
     }
 }
