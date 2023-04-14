@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.silKaynakbtn = new System.Windows.Forms.Button();
+            this.guncelleKaynakbtn = new System.Windows.Forms.Button();
+            this.ekleKaynakbtn = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.silKullanicibtn = new System.Windows.Forms.Button();
             this.guncelleKullanicibtn = new System.Windows.Forms.Button();
             this.ekleKullanicibtn = new System.Windows.Forms.Button();
@@ -39,7 +43,12 @@
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(67)))), ((int)(((byte)(96)))));
+            this.panel1.Controls.Add(this.silKaynakbtn);
+            this.panel1.Controls.Add(this.guncelleKaynakbtn);
+            this.panel1.Controls.Add(this.ekleKaynakbtn);
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.silKullanicibtn);
             this.panel1.Controls.Add(this.guncelleKullanicibtn);
             this.panel1.Controls.Add(this.ekleKullanicibtn);
@@ -47,9 +56,52 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(152, 595);
+            this.panel1.Size = new System.Drawing.Size(152, 686);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // silKaynakbtn
+            // 
+            this.silKaynakbtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.silKaynakbtn.Location = new System.Drawing.Point(0, 420);
+            this.silKaynakbtn.Name = "silKaynakbtn";
+            this.silKaynakbtn.Size = new System.Drawing.Size(152, 60);
+            this.silKaynakbtn.TabIndex = 7;
+            this.silKaynakbtn.Text = "Sil";
+            this.silKaynakbtn.UseVisualStyleBackColor = true;
+            this.silKaynakbtn.Click += new System.EventHandler(this.silKaynakbtn_Click);
+            // 
+            // guncelleKaynakbtn
+            // 
+            this.guncelleKaynakbtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guncelleKaynakbtn.Location = new System.Drawing.Point(0, 360);
+            this.guncelleKaynakbtn.Name = "guncelleKaynakbtn";
+            this.guncelleKaynakbtn.Size = new System.Drawing.Size(152, 60);
+            this.guncelleKaynakbtn.TabIndex = 6;
+            this.guncelleKaynakbtn.Text = "Güncelle";
+            this.guncelleKaynakbtn.UseVisualStyleBackColor = true;
+            // 
+            // ekleKaynakbtn
+            // 
+            this.ekleKaynakbtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ekleKaynakbtn.Location = new System.Drawing.Point(0, 300);
+            this.ekleKaynakbtn.Name = "ekleKaynakbtn";
+            this.ekleKaynakbtn.Size = new System.Drawing.Size(152, 60);
+            this.ekleKaynakbtn.TabIndex = 5;
+            this.ekleKaynakbtn.Text = "Ekle";
+            this.ekleKaynakbtn.UseVisualStyleBackColor = true;
+            this.ekleKaynakbtn.Click += new System.EventHandler(this.ekleKaynakbtn_Click);
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.Location = new System.Drawing.Point(0, 240);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(152, 60);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Kaynaklar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // silKullanicibtn
             // 
@@ -60,6 +112,7 @@
             this.silKullanicibtn.TabIndex = 3;
             this.silKullanicibtn.Text = "Sil";
             this.silKullanicibtn.UseVisualStyleBackColor = true;
+            this.silKullanicibtn.Click += new System.EventHandler(this.silKullanicibtn_Click);
             // 
             // guncelleKullanicibtn
             // 
@@ -99,20 +152,19 @@
             this.kullaniciBilgiPaneli.Dock = System.Windows.Forms.DockStyle.Top;
             this.kullaniciBilgiPaneli.Location = new System.Drawing.Point(152, 0);
             this.kullaniciBilgiPaneli.Name = "kullaniciBilgiPaneli";
-            this.kullaniciBilgiPaneli.Size = new System.Drawing.Size(1148, 42);
+            this.kullaniciBilgiPaneli.Size = new System.Drawing.Size(1772, 42);
             this.kullaniciBilgiPaneli.TabIndex = 1;
             // 
             // islemPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 595);
+            this.ClientSize = new System.Drawing.Size(1924, 686);
             this.Controls.Add(this.kullaniciBilgiPaneli);
             this.Controls.Add(this.panel1);
             this.IsMdiContainer = true;
             this.Name = "islemPaneli";
             this.Text = "islemPaneli";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.islemPaneli_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -127,5 +179,9 @@
         private System.Windows.Forms.Button silKullanicibtn;
         private System.Windows.Forms.Button guncelleKullanicibtn;
         private System.Windows.Forms.Button ekleKullanicibtn;
+        private System.Windows.Forms.Button silKaynakbtn;
+        private System.Windows.Forms.Button guncelleKaynakbtn;
+        private System.Windows.Forms.Button ekleKaynakbtn;
+        private System.Windows.Forms.Button button2;
     }
 }

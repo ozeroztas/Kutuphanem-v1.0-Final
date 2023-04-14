@@ -1,4 +1,5 @@
-﻿using Kütüphanem.Kullanici;
+﻿using Kütüphanem.Kaynak;
+using Kütüphanem.Kullanici;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,6 +25,10 @@ namespace Kütüphanem
             ekleKullanicibtn.Visible = false;
             silKullanicibtn.Visible = false;
             guncelleKullanicibtn.Visible = false;
+
+            ekleKaynakbtn.Visible = false;
+            silKaynakbtn.Visible = false;
+            guncelleKaynakbtn.Visible = false;
         }
 
         private void Kullanicibtn_Click(object sender, EventArgs e)
@@ -56,6 +61,43 @@ namespace Kütüphanem
             KullaniciEkleForm ekleForm = new KullaniciEkleForm();
             ekleForm.MdiParent = this;
             ekleForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (ekleKaynakbtn.Visible == false)
+            {
+                ekleKaynakbtn.Visible = true;
+                silKaynakbtn.Visible = true;
+                guncelleKaynakbtn.Visible = true;
+            }
+            else
+            {
+                ekleKaynakbtn.Visible = false;
+                silKaynakbtn.Visible = false;
+                guncelleKaynakbtn.Visible = false;
+            }
+            KaynakListeForm kListe = new KaynakListeForm();
+            kListe.MdiParent = this;
+            kListe.Show();
+        }
+
+        private void ekleKaynakbtn_Click(object sender, EventArgs e)
+        {
+            KaynakEkleForm kEkle = new KaynakEkleForm();
+            kEkle.MdiParent = this;
+            kEkle.Show();
+        }
+
+        private void silKaynakbtn_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void silKullanicibtn_Click(object sender, EventArgs e)
+        {
+            KullaniciSilForm kSil = new KullaniciSilForm();
+            kSil.MdiParent = this;
+            kSil.Show();
         }
     }
 }
