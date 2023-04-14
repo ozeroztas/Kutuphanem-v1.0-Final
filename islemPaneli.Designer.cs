@@ -123,6 +123,7 @@
             this.guncelleKullanicibtn.TabIndex = 2;
             this.guncelleKullanicibtn.Text = "Güncelle";
             this.guncelleKullanicibtn.UseVisualStyleBackColor = true;
+            this.guncelleKullanicibtn.Click += new System.EventHandler(this.guncelleKullanicibtn_Click);
             // 
             // ekleKullanicibtn
             // 

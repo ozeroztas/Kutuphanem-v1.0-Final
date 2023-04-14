@@ -66,10 +66,6 @@ namespace Kütüphanem.Kullanici
             {
                 kullanicilar.kullanici_cinsiyet="K";
             }
-            //else
-            //{
-            //    MessageBox.Show("Lütfen cinsiyet seçiniz");
-            //}
             db.Kullanicilar.Add(kullanicilar);
             db.SaveChanges();
             Listele();
