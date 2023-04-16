@@ -91,6 +91,9 @@ namespace Kütüphanem
 
         private void silKaynakbtn_Click(object sender, EventArgs e)
         {
+            KaynakSilForm kSil = new KaynakSilForm();
+            kSil.MdiParent = this;
+            kSil.Show();
         }
 
         private void silKullanicibtn_Click(object sender, EventArgs e)
