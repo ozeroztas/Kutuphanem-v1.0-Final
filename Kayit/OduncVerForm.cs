@@ -53,5 +53,10 @@ namespace Kütüphanem.Kayit
             var bulunanKaynaklar = db.Kaynaklar.Where(x=> x.kaynak_ad.Contains(gelenAd)).ToList();
             dataGridView2.DataSource = bulunanKaynaklar;
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

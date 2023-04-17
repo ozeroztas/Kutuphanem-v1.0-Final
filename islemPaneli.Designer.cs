@@ -58,7 +58,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(152, 686);
+            this.panel1.Size = new System.Drawing.Size(152, 853);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -167,14 +167,14 @@
             this.kullaniciBilgiPaneli.Dock = System.Windows.Forms.DockStyle.Top;
             this.kullaniciBilgiPaneli.Location = new System.Drawing.Point(152, 0);
             this.kullaniciBilgiPaneli.Name = "kullaniciBilgiPaneli";
-            this.kullaniciBilgiPaneli.Size = new System.Drawing.Size(1772, 42);
+            this.kullaniciBilgiPaneli.Size = new System.Drawing.Size(1430, 42);
             this.kullaniciBilgiPaneli.TabIndex = 1;
             // 
             // islemPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 686);
+            this.ClientSize = new System.Drawing.Size(1582, 853);
             this.Controls.Add(this.kullaniciBilgiPaneli);
             this.Controls.Add(this.panel1);
             this.IsMdiContainer = true;
