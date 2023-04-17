@@ -1,4 +1,5 @@
-﻿using Kütüphanem.Kaynak;
+﻿using Kütüphanem.Kayit;
+using Kütüphanem.Kaynak;
 using Kütüphanem.Kullanici;
 using System;
 using System.Collections.Generic;
@@ -115,6 +116,13 @@ namespace Kütüphanem
             KaynakGuncelleForm kGuncel = new KaynakGuncelleForm();
             kGuncel.MdiParent = this;
             kGuncel.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OduncVerForm odunc = new OduncVerForm();
+            odunc.MdiParent = this;
+            odunc.Show();
         }
     }
 }

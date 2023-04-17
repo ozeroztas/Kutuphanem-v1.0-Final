@@ -27,7 +27,7 @@ namespace Kütüphanem.Kaynak
         private void button1_Click(object sender, EventArgs e)
         {
             int secilenId = Convert.ToInt16(dataGridView1.CurrentRow.Cells[0].Value);
-            var silinenKaynak = db.Kaynaklar.Where(x=>x.kaynay_id == secilenId).FirstOrDefault();
+            var silinenKaynak = db.Kaynaklar.Where(x=>x.kaynak_id == secilenId).FirstOrDefault();
             db.Kaynaklar.Remove(silinenKaynak);
             db.SaveChanges();
 

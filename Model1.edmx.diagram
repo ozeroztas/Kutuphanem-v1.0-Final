@@ -7,7 +7,11 @@
       <Diagram DiagramId="e2bf72e82654423abe27e0336f97a0c6" Name="Diagram1">
         <EntityTypeShape EntityType="KutuphaneOtomasyonModel.Kullanicilar" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="KutuphaneOtomasyonModel.Personeller" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="KutuphaneOtomasyonModel.Kaynaklar" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="KutuphaneOtomasyonModel.Kayitlar" Width="1.5" PointX="3" PointY="4.75" />
+        <EntityTypeShape EntityType="KutuphaneOtomasyonModel.sysdiagrams" Width="1.5" PointX="5.375" PointY="0.75" />
+        <AssociationConnector Association="KutuphaneOtomasyonModel.FK_Kayitlar_Kullanicilar" />
+        <EntityTypeShape EntityType="KutuphaneOtomasyonModel.Kaynaklar" Width="1.5" PointX="5.375" PointY="4" />
+        <AssociationConnector Association="KutuphaneOtomasyonModel.FK_Kayitlar_Kaynaklar" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

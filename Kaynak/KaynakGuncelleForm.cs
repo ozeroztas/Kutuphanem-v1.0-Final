@@ -36,7 +36,7 @@ namespace Kütüphanem.Kaynak
         private void button2_Click(object sender, EventArgs e)
         {
             int secilenKaynak = Convert.ToInt16(dataGridView1.CurrentRow.Cells[0].Value);
-            var guncellenecekKaynak = db.Kaynaklar.Where(x=> x.kaynay_id == secilenKaynak).FirstOrDefault();
+            var guncellenecekKaynak = db.Kaynaklar.Where(x=> x.kaynak_id == secilenKaynak).FirstOrDefault();
             guncellenecekKaynak.kaynak_ad = adKaynaktxt.Text;
             guncellenecekKaynak.kaynak_yazar = yazarKaynaktxt.Text;
             guncellenecekKaynak.kaynak_ad = adKaynaktxt.Text;

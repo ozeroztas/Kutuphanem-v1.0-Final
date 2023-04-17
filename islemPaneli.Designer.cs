@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.silKaynakbtn = new System.Windows.Forms.Button();
             this.guncelleKaynakbtn = new System.Windows.Forms.Button();
             this.ekleKaynakbtn = new System.Windows.Forms.Button();
@@ -45,6 +46,7 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(67)))), ((int)(((byte)(96)))));
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.silKaynakbtn);
             this.panel1.Controls.Add(this.guncelleKaynakbtn);
             this.panel1.Controls.Add(this.ekleKaynakbtn);
@@ -59,6 +61,17 @@
             this.panel1.Size = new System.Drawing.Size(152, 686);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Location = new System.Drawing.Point(0, 480);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(152, 60);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Ödünç Ver";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // silKaynakbtn
             // 
@@ -185,5 +198,6 @@
         private System.Windows.Forms.Button guncelleKaynakbtn;
         private System.Windows.Forms.Button ekleKaynakbtn;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
