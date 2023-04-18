@@ -58,5 +58,33 @@ namespace Kütüphanem.Kayit
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            String secilenKisiTC = TCBultxt.Text;
+            var secilenKisi = db.Kullanicilar.Where(x=> x.kullanici_tc.Equals(secilenKisiTC)).FirstOrDefault();
+            int secilenKitapId = Convert.ToInt16(dataGridView2.CurrentRow.Cells[0].Value);
+            var secilenKitap = db.Kaynaklar.Where(x=> x.kaynak_id == secilenKitapId).FirstOrDefault();
+
+            Kayitlar yeniKayit = new Kayitlar();
+            yeniKayit.kitap_id = secilenKitap.kaynak_id;
+            yeniKayit.kullanici_id = secilenKisi.kullanici_id;
+            yeniKayit.alis_tarihi = DateTime.Today;
+            yeniKayit.son_tarih = DateTime.Today.AddDays(15);
+            db.Kayitlar.Add(yeniKayit);
+            db.SaveChanges();
+            var kayitList = db.Kayitlar.ToList();
+            dataGridView1.DataSource = kayitList.ToList();
+        }
+
+        private void dataGridView2_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
