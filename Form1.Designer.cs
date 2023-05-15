@@ -45,6 +45,8 @@
             this.adGiristxt.Name = "adGiristxt";
             this.adGiristxt.Size = new System.Drawing.Size(280, 27);
             this.adGiristxt.TabIndex = 0;
+            this.adGiristxt.Enter += new System.EventHandler(this.adGiristxt_Enter);
+            this.adGiristxt.Leave += new System.EventHandler(this.adGiristxt_Leave);
             // 
             // sifreGiristxt
             // 
@@ -53,6 +55,9 @@
             this.sifreGiristxt.Name = "sifreGiristxt";
             this.sifreGiristxt.Size = new System.Drawing.Size(280, 27);
             this.sifreGiristxt.TabIndex = 1;
+            this.sifreGiristxt.UseSystemPasswordChar = true;
+            this.sifreGiristxt.Enter += new System.EventHandler(this.sifreGiristxt_Enter);
+            this.sifreGiristxt.Leave += new System.EventHandler(this.sifreGiristxt_Leave);
             // 
             // label1
             // 

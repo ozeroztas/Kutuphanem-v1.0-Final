@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Kütüphanem
 {
@@ -34,6 +35,38 @@ namespace Kütüphanem
                 islemPaneli panel = new islemPaneli();
                 panel.Show();
                 this.Hide();
+            }
+        }
+
+        private void adGiristxt_Enter(object sender, EventArgs e)
+        {
+            if (adGiristxt.Text == "Kullanıcı Adınızı Girin:")
+            {
+                adGiristxt.Text = "";
+            }
+        }
+
+        private void adGiristxt_Leave(object sender, EventArgs e)
+        {
+            if (adGiristxt.Text == "")
+            {
+                adGiristxt.Text = "Kullanıcı Adınızı Girin:";
+            }
+        }
+
+        private void sifreGiristxt_Enter(object sender, EventArgs e)
+        {
+            if (sifreGiristxt.Text == "Şifrenizi Girin:")
+            {
+                sifreGiristxt.Text = "";
+            }
+        }
+
+        private void sifreGiristxt_Leave(object sender, EventArgs e)
+        {
+            if (sifreGiristxt.Text == "")
+            {
+                sifreGiristxt.Text = "Şifrenizi Girin:";
             }
         }
     }
