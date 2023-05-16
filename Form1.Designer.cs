@@ -41,7 +41,7 @@
             // adGiristxt
             // 
             this.adGiristxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.adGiristxt.Location = new System.Drawing.Point(205, 174);
+            this.adGiristxt.Location = new System.Drawing.Point(152, 184);
             this.adGiristxt.Name = "adGiristxt";
             this.adGiristxt.Size = new System.Drawing.Size(280, 27);
             this.adGiristxt.TabIndex = 0;
@@ -51,7 +51,7 @@
             // sifreGiristxt
             // 
             this.sifreGiristxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.sifreGiristxt.Location = new System.Drawing.Point(205, 219);
+            this.sifreGiristxt.Location = new System.Drawing.Point(152, 229);
             this.sifreGiristxt.Name = "sifreGiristxt";
             this.sifreGiristxt.Size = new System.Drawing.Size(280, 27);
             this.sifreGiristxt.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(78, 181);
+            this.label1.Location = new System.Drawing.Point(40, 191);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 20);
             this.label1.TabIndex = 2;
@@ -73,16 +73,16 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(135, 226);
+            this.label2.Location = new System.Drawing.Point(84, 236);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 20);
+            this.label2.Size = new System.Drawing.Size(62, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Şifre:";
+            this.label2.Text = "Parola:";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(255, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(202, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(155, 143);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -92,7 +92,7 @@
             // personelGirisbtn
             // 
             this.personelGirisbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.personelGirisbtn.Location = new System.Drawing.Point(370, 268);
+            this.personelGirisbtn.Location = new System.Drawing.Point(317, 278);
             this.personelGirisbtn.Name = "personelGirisbtn";
             this.personelGirisbtn.Size = new System.Drawing.Size(115, 38);
             this.personelGirisbtn.TabIndex = 5;
@@ -105,7 +105,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(204)))), ((int)(((byte)(227)))));
-            this.ClientSize = new System.Drawing.Size(588, 355);
+            this.ClientSize = new System.Drawing.Size(528, 349);
             this.Controls.Add(this.personelGirisbtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);

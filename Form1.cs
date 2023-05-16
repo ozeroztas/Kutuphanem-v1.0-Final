@@ -56,7 +56,7 @@ namespace Kütüphanem
 
         private void sifreGiristxt_Enter(object sender, EventArgs e)
         {
-            if (sifreGiristxt.Text == "Şifrenizi Girin:")
+            if (sifreGiristxt.Text == "Parolayı Girin:")
             {
                 sifreGiristxt.Text = "";
             }
@@ -66,7 +66,7 @@ namespace Kütüphanem
         {
             if (sifreGiristxt.Text == "")
             {
-                sifreGiristxt.Text = "Şifrenizi Girin:";
+                sifreGiristxt.Text = "Parolayı Girin:";
             }
         }
     }
