@@ -32,24 +32,27 @@ namespace Kütüphanem
             guncelleKaynakbtn.Visible = false;
         }
 
+        private KullaniciListeForm klisteForm;
         private void Kullanicibtn_Click(object sender, EventArgs e)
         {
+            
             if (ekleKullanicibtn.Visible == false)
             {
                 ekleKullanicibtn.Visible = true;
                 silKullanicibtn.Visible = true;
                 guncelleKullanicibtn.Visible = true;
+                klisteForm = new KullaniciListeForm();
+                klisteForm.MdiParent = this;
+                klisteForm.Show();
             }
             else
             {
                 ekleKullanicibtn.Visible = false;
                 silKullanicibtn.Visible = false;
                 guncelleKullanicibtn.Visible = false;
+                klisteForm.Close();
             }
 
-            KullaniciListeForm klisteForm = new KullaniciListeForm();
-            klisteForm.MdiParent = this;
-            klisteForm.Show();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -57,13 +60,27 @@ namespace Kütüphanem
 
         }
 
+        private KullaniciEkleForm ekleForm;
+
+        private bool ekleKullaniciDurum = false;
         private void ekleKullanicibtn_Click(object sender, EventArgs e)
         {
-            KullaniciEkleForm ekleForm = new KullaniciEkleForm();
-            ekleForm.MdiParent = this;
-            ekleForm.Show();
+            if (ekleKullaniciDurum == false)
+            {
+                ekleForm = new KullaniciEkleForm();
+                ekleForm.MdiParent = this;
+                ekleForm.Show();
+                ekleKullaniciDurum = true;
+            }
+            else
+            {
+                ekleForm.Close();
+                ekleKullaniciDurum = false;
+            }
+
         }
 
+        private KaynakListeForm kListe;
         private void button2_Click(object sender, EventArgs e)
         {
             if (ekleKaynakbtn.Visible == false)
@@ -71,51 +88,103 @@ namespace Kütüphanem
                 ekleKaynakbtn.Visible = true;
                 silKaynakbtn.Visible = true;
                 guncelleKaynakbtn.Visible = true;
+                kListe = new KaynakListeForm();
+                kListe.MdiParent = this;
+                kListe.Show();
             }
             else
             {
                 ekleKaynakbtn.Visible = false;
                 silKaynakbtn.Visible = false;
                 guncelleKaynakbtn.Visible = false;
+                kListe.Close();
             }
-            KaynakListeForm kListe = new KaynakListeForm();
-            kListe.MdiParent = this;
-            kListe.Show();
         }
 
+        private KaynakEkleForm kEkle;
+        private bool ekleKaynakDurum = false;
         private void ekleKaynakbtn_Click(object sender, EventArgs e)
         {
-            KaynakEkleForm kEkle = new KaynakEkleForm();
-            kEkle.MdiParent = this;
-            kEkle.Show();
+            if (ekleKaynakDurum == false)
+            {
+                kEkle = new KaynakEkleForm();
+                kEkle.MdiParent = this;
+                kEkle.Show();
+                ekleKaynakDurum = true;
+            }
+            else
+            {
+                kEkle.Close();
+                ekleKaynakDurum = false;
+            }
         }
 
+        private KaynakSilForm kaynakSil;
         private void silKaynakbtn_Click(object sender, EventArgs e)
         {
-            KaynakSilForm kSil = new KaynakSilForm();
-            kSil.MdiParent = this;
-            kSil.Show();
+            if (ekleKaynakDurum == false)
+            {
+                kaynakSil = new KaynakSilForm();
+                kaynakSil.MdiParent = this;
+                kaynakSil.Show();
+                ekleKaynakDurum = true;
+            }
+            else
+            {
+                kaynakSil.Close();
+                ekleKaynakDurum = false;
+            }
         }
 
+        private KullaniciSilForm kSil;
         private void silKullanicibtn_Click(object sender, EventArgs e)
         {
-            KullaniciSilForm kSil = new KullaniciSilForm();
-            kSil.MdiParent = this;
-            kSil.Show();
+            if (ekleKullaniciDurum == false)
+            {
+                kSil = new KullaniciSilForm();
+                kSil.MdiParent = this;
+                kSil.Show();
+                ekleKullaniciDurum = true;
+            }
+            else
+            {
+                kSil.Close();
+                ekleKullaniciDurum = false;
+            }
         }
 
+        private KullaniciGuncelleForm kGuncel;
         private void guncelleKullanicibtn_Click(object sender, EventArgs e)
         {
-            KullaniciGuncelleForm kGuncel = new KullaniciGuncelleForm();
-            kGuncel.MdiParent = this;
-            kGuncel.Show();
+            if (ekleKullaniciDurum == false)
+            {
+                kGuncel = new KullaniciGuncelleForm();
+                kGuncel.MdiParent = this;
+                kGuncel.Show();
+                ekleKullaniciDurum = true;
+            }
+            else
+            {
+                kGuncel.Close();
+                ekleKullaniciDurum = false;
+            }
         }
 
+        private KaynakGuncelleForm kaynakGuncel;
         private void guncelleKaynakbtn_Click(object sender, EventArgs e)
         {
-            KaynakGuncelleForm kGuncel = new KaynakGuncelleForm();
-            kGuncel.MdiParent = this;
-            kGuncel.Show();
+            if (ekleKaynakDurum == false)
+            {
+                kaynakGuncel = new KaynakGuncelleForm();
+                kaynakGuncel.MdiParent = this;
+                kaynakGuncel.Show();
+                ekleKaynakDurum = true;
+            }
+            else
+            {
+                kaynakGuncel.Close();
+                ekleKaynakDurum = false;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
