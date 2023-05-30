@@ -69,5 +69,20 @@ namespace Kütüphanem
                 sifreGiristxt.Text = "Parolayı Girin:";
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void adGiristxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sifreGiristxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -45,6 +45,7 @@
             this.adGiristxt.Name = "adGiristxt";
             this.adGiristxt.Size = new System.Drawing.Size(280, 27);
             this.adGiristxt.TabIndex = 0;
+            this.adGiristxt.TextChanged += new System.EventHandler(this.adGiristxt_TextChanged);
             this.adGiristxt.Enter += new System.EventHandler(this.adGiristxt_Enter);
             this.adGiristxt.Leave += new System.EventHandler(this.adGiristxt_Leave);
             // 
@@ -56,6 +57,7 @@
             this.sifreGiristxt.Size = new System.Drawing.Size(280, 27);
             this.sifreGiristxt.TabIndex = 1;
             this.sifreGiristxt.UseSystemPasswordChar = true;
+            this.sifreGiristxt.TextChanged += new System.EventHandler(this.sifreGiristxt_TextChanged);
             this.sifreGiristxt.Enter += new System.EventHandler(this.sifreGiristxt_Enter);
             this.sifreGiristxt.Leave += new System.EventHandler(this.sifreGiristxt_Leave);
             // 
@@ -118,6 +120,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

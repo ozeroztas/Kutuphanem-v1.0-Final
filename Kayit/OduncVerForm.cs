@@ -22,13 +22,28 @@ namespace Kütüphanem.Kayit
             var kayitList = db.Kayitlar.ToList();
             dataGridView1.DataSource = kayitList.ToList();
 
+            dataGridView1.Columns[0].Visible = false;
+            dataGridView1.Columns[6].Visible = false;
+            dataGridView1.Columns[7].Visible = false;
+
+            dataGridView1.Columns[1].HeaderText = "Kullanıcı ID";
+            dataGridView1.Columns[2].HeaderText = "Kaynak ID";
+            dataGridView1.Columns[3].HeaderText = "Alış Tarihi";
+            dataGridView1.Columns[4].HeaderText = "Son Tarih";
+            dataGridView1.Columns[5].HeaderText = "Durum";
+
             var kaynakList = db.Kaynaklar.ToList();
             dataGridView2.DataSource = kaynakList.ToList();
 
-            dataGridView1.Columns[6].Visible = false;
-            dataGridView1.Columns[7].Visible = false;
-            dataGridView1.Columns[1].HeaderText = "Kullanıcı ID";
-            dataGridView1.Columns[2].HeaderText = "Kaynak ID";
+            dataGridView2.Columns[0].Visible = false;
+            dataGridView2.Columns[6].Visible = false;
+
+            dataGridView2.Columns[1].HeaderText = "Ad";
+            dataGridView2.Columns[2].HeaderText = "Yazar";
+            dataGridView2.Columns[3].HeaderText = "Yayınevi";
+            dataGridView2.Columns[4].HeaderText = "Sayfa";
+            dataGridView2.Columns[5].HeaderText = "Basım";
+
         }
 
         private void label1_Click(object sender, EventArgs e)
