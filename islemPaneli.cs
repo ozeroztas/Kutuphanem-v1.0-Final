@@ -70,7 +70,7 @@ namespace Kütüphanem
                 ekleForm = new KullaniciEkleForm();
                 ekleForm.MdiParent = this;
                 ekleForm.Show();
-                ekleKullaniciDurum = true;
+                ekleKullaniciDurum = false;
             }
             else
             {
@@ -110,7 +110,7 @@ namespace Kütüphanem
                 kEkle = new KaynakEkleForm();
                 kEkle.MdiParent = this;
                 kEkle.Show();
-                ekleKaynakDurum = true;
+                ekleKaynakDurum = false;
             }
             else
             {
@@ -127,7 +127,7 @@ namespace Kütüphanem
                 kaynakSil = new KaynakSilForm();
                 kaynakSil.MdiParent = this;
                 kaynakSil.Show();
-                ekleKaynakDurum = true;
+                ekleKaynakDurum = false;
             }
             else
             {
@@ -144,7 +144,7 @@ namespace Kütüphanem
                 kSil = new KullaniciSilForm();
                 kSil.MdiParent = this;
                 kSil.Show();
-                ekleKullaniciDurum = true;
+                ekleKullaniciDurum = false;
             }
             else
             {
@@ -161,7 +161,7 @@ namespace Kütüphanem
                 kGuncel = new KullaniciGuncelleForm();
                 kGuncel.MdiParent = this;
                 kGuncel.Show();
-                ekleKullaniciDurum = true;
+                ekleKullaniciDurum = false;
             }
             else
             {
@@ -178,7 +178,7 @@ namespace Kütüphanem
                 kaynakGuncel = new KaynakGuncelleForm();
                 kaynakGuncel.MdiParent = this;
                 kaynakGuncel.Show();
-                ekleKaynakDurum = true;
+                ekleKaynakDurum = false;
             }
             else
             {
