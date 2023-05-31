@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.silKaynakbtn = new System.Windows.Forms.Button();
             this.guncelleKaynakbtn = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.ekleKullanicibtn = new System.Windows.Forms.Button();
             this.Kullanicibtn = new System.Windows.Forms.Button();
             this.kullaniciBilgiPaneli = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,6 +63,17 @@
             this.panel1.Size = new System.Drawing.Size(152, 853);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.Location = new System.Drawing.Point(0, 540);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(152, 60);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Geri Al";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -171,17 +182,6 @@
             this.kullaniciBilgiPaneli.Name = "kullaniciBilgiPaneli";
             this.kullaniciBilgiPaneli.Size = new System.Drawing.Size(1430, 42);
             this.kullaniciBilgiPaneli.TabIndex = 1;
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.Location = new System.Drawing.Point(0, 540);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(152, 60);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Geri Al";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // islemPaneli
             // 

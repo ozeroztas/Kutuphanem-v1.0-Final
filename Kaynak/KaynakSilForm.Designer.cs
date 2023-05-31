@@ -35,7 +35,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 21);
+            this.button1.Location = new System.Drawing.Point(189, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 48);
             this.button1.TabIndex = 3;
@@ -46,11 +46,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 90);
+            this.dataGridView1.Location = new System.Drawing.Point(315, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1368, 521);
+            this.dataGridView1.Size = new System.Drawing.Size(1000, 684);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -64,6 +64,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "KaynakSilForm";
             this.Text = "KaynakSilForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.KaynakSilForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -144,6 +144,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "OduncVerForm";
             this.Text = "OduncVerForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.OduncVerForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
