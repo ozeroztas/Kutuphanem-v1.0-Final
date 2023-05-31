@@ -42,11 +42,22 @@ namespace Kütüphanem.Kullanici
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int secilenId = Convert.ToInt16(dataGridView1.CurrentRow.Cells[0].Value);
-            var kullanici = db.Kullanicilar.Where(x=>x.kullanici_id==secilenId).FirstOrDefault();
-            db.Kullanicilar.Remove(kullanici);
-            db.SaveChanges();
-            Listele();
+            DialogResult silinsinMi =
+                MessageBox.Show("Kullanıcı Silinsin mi?", "Silme işlemi", MessageBoxButtons.YesNo);
+            if (silinsinMi == DialogResult.Yes)
+            {
+                int secilenId = Convert.ToInt16(dataGridView1.CurrentRow.Cells[0].Value);
+                var kullanici = db.Kullanicilar.Where(x => x.kullanici_id == secilenId).FirstOrDefault();
+                db.Kullanicilar.Remove(kullanici);
+                db.SaveChanges();
+                Listele();
+                MessageBox.Show("Kullanıcı silindi");
+            }
+            else
+            {
+                MessageBox.Show("Silme işlemi iptal edildi");
+            }
+
         }
     }
 }
